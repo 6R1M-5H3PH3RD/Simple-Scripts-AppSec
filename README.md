@@ -116,3 +116,11 @@ This repository is intended for educational use and contains scripts that may be
 - If the status code is anything other than 200, then the access control check is considered to have failed.
 - You can modify this script to suit your specific needs. 
 - For example, you could add additional checks to verify that the response headers or body contain the expected values, or you could add logic to handle different types of HTTP status codes.
+
+### To detect broken access control, you can use a variety of techniques, such as:
+1. Manual testing: You can manually test access control mechanisms by attempting to access restricted resources or functions using different combinations of user accounts, permissions, and input values.
+2. Automated testing: You can use tools such as vulnerability scanners or web application firewalls to automatically test access control mechanisms and detect potential vulnerabilities.
+3. Code review: You can review the code of your application to ensure that proper access control checks are in place and are being implemented correctly.
+4. Log analysis: You can analyze logs of access to your application to identify any unauthorized access or attempts to access restricted resources.
+5. Network monitoring: You can use network monitoring tools to detect and alert on any suspicious traffic that may indicate an attempt to bypass access control mechanisms.
+### Overall, it is important to regularly test and monitor access control mechanisms to ensure that they are functioning correctly and are not being bypassed by attackers.
