@@ -1,3 +1,4 @@
+#Server-side template injection (SSTI) is a type of vulnerability that occurs when an application processes user-supplied input as a template, allowing an attacker to inject arbitrary code into the template and execute it on the server.
 #This code checks for common template tags and payloads that may indicate an SSTI vulnerability. 
 #It uses regular expressions to search for the template tags and simple string comparisons to check for the payloads.
 #Keep in mind that this is a very basic SSTI detector and may not detect all possible SSTI vulnerabilities. 
