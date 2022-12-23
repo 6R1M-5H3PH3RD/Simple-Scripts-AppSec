@@ -124,3 +124,12 @@ This repository is intended for educational use and contains scripts that may be
 4. Log analysis: You can analyze logs of access to your application to identify any unauthorized access or attempts to access restricted resources.
 5. Network monitoring: You can use network monitoring tools to detect and alert on any suspicious traffic that may indicate an attempt to bypass access control mechanisms.
 ### Overall, it is important to regularly test and monitor access control mechanisms to ensure that they are functioning correctly and are not being bypassed by attackers.
+
+### To Do list for broken Access control script
+1. Add additional checks: You can add additional checks to the script to verify that the response headers or body contain the expected values. For example, you could check for the presence of a specific header or for a particular string in the response body.
+2. Handle different status codes: Currently, the script only checks for a status code of 200. You can modify the script to handle different status codes and perform different actions based on the code received. For example, you could check for a status code of 401 (unauthorized) to indicate that access control has failed.
+3. Use authentication: If the resource you are trying to access requires authentication, you can modify the script to include authentication credentials. You can use the requests.auth module to handle basic authentication, or you can use an HTTP library such as http.client to handle more advanced authentication schemes.
+4. Test multiple URL paths: You can modify the script to test multiple URL paths within the same domain, rather than just a single URL. This can help you identify any areas of the application where access control may be weaker.
+5. Incorporate a data file: You can create a data file that contains a list of URLs to test, and modify the script to read from this file and test each URL in turn. This can make it easier to test a large number of URLs without having to modify the script itself.
+
+### By adding these additional features, you can create a more comprehensive and advanced broken access control detection script.
