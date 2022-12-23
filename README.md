@@ -133,3 +133,19 @@ This repository is intended for educational use and contains scripts that may be
 5. Incorporate a data file: You can create a data file that contains a list of URLs to test, and modify the script to read from this file and test each URL in turn. This can make it easier to test a large number of URLs without having to modify the script itself.
 
 ### By adding these additional features, you can create a more comprehensive and advanced broken access control detection script.
+
+
+## [PublicS3AccessibleBucets.py](https://github.com/6R1M-5H3PH3RD/Simple-Scripts-AppSec/blob/main/PublicS3AccessibleBucets.py)
+### Python script for scanning publicly available S3 buckets:
+
+- This script first connects to the S3 service using the boto3.client() function and initializes an empty list to store the names of publicly available buckets. It then uses the s3.list_buckets() function to list all of the buckets in the account and iterates through them.
+
+- For each bucket, the script uses the s3.get_bucket_acl() function to get the permissions of the bucket and checks if the bucket has public read or write permissions using an if statement that checks the Permission and Grantee fields in the Grants list. If the bucket has public read or write permissions, it is added to the public_buckets list.
+
+- The script then prints the names of the publicly available buckets, as well as their locations, versioning status, and contents. To do this, it uses the s3.get_bucket_location() and s3.get_bucket_versioning() functions to get the location and versioning status of each bucket, and the s3.list_objects() function to list the objects in the bucket.
+
+- Finally, the script stores the result in HTML tabular format by constructing an HTML table using the names, locations, versioning status, and contents of the publicly available buckets.
+
+## TODO
+- This script can be modified to handle different types of permissions, such as "PublicWrite" or "PublicReadWrite", by adding additional conditions to the if statement that checks the Permission field. It can also be modified to check for specific grantees by modifying the if statement to compare the Grantee field with the desired grantee. Additionally, the script can be modified to check additional properties of the bucket, such as the bucket's location or versioning status, by adding additional functions or conditions to the if statements. Finally, the script can be modified to check the contents of the bucket for specific files or patterns by adding additional logic to iterate through the objects in the bucket and check for the desired files or patterns.
+
