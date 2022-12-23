@@ -108,4 +108,11 @@ This repository is intended for educational use and contains scripts that may be
 
 ### This is the complete program that searches for potential XSS vulnerabilities in a given website using a combination of regular expressions and HTML parsing. It prompts the user for the website URL, makes an HTTP request to the website, parses the HTML content, and searches for XSS vulnerabilities. 
 - It then prints the list of potential XSS vulnerabilities to the console.
-- If you want HTML table from the data/findings then uncomment the bottom code which will generate an HTML table from the data and store it in the html_table variable
+- If you want HTML table from the data/findings then uncomment the bottom code which will generate an HTML table from the data and store it in the html_table variable.
+
+## [BrokenAccessControl.py](https://github.com/6R1M-5H3PH3RD/Simple-Scripts-AppSec/blob/main/BrokenAccessControl.py)
+- This script uses the requests library to send a request to a given URL and check the response status code. 
+- If the status code is 200 (which indicates a successful request), then the access control check is considered to have passed. 
+- If the status code is anything other than 200, then the access control check is considered to have failed.
+- You can modify this script to suit your specific needs. 
+- For example, you could add additional checks to verify that the response headers or body contain the expected values, or you could add logic to handle different types of HTTP status codes.
