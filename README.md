@@ -146,6 +146,6 @@ This repository is intended for educational use and contains scripts that may be
 
 - Finally, the script stores the result in HTML tabular format by constructing an HTML table using the names, locations, versioning status, and contents of the publicly available buckets.
 
-## TODO
+### TODO:PublicS3AccessibleBucets.py
 - This script can be modified to handle different types of permissions, such as "PublicWrite" or "PublicReadWrite", by adding additional conditions to the if statement that checks the Permission field. It can also be modified to check for specific grantees by modifying the if statement to compare the Grantee field with the desired grantee. Additionally, the script can be modified to check additional properties of the bucket, such as the bucket's location or versioning status, by adding additional functions or conditions to the if statements. Finally, the script can be modified to check the contents of the bucket for specific files or patterns by adding additional logic to iterate through the objects in the bucket and check for the desired files or patterns.
 
